@@ -734,63 +734,74 @@ section {
 /* CONTACT SECTION
 -------------------------------------------------- */
 .contact-sec {
-	background: url(../img/contact-bg.jpg) no-repeat 0 bottom;
-	background-size: cover;
+    background: url(../img/contact-bg.jpg) no-repeat 0 bottom;
+    background-size: cover;
 }
 .contact-sec h2 {
-	color: #fff;
-	font-weight: 600;
-	text-align: center;
-	margin-bottom: 50px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .contact-links {
-	display: flex;
-	justify-content: center;
-	gap: 100px;
-  }
-  
-  .contact-item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-  }
+    display: flex;
+    justify-content: space-around; 
+    align-items: center; /* Ensure items are centered vertically */
+	offset: auto;
+    gap: 50px; /* Adjust gap as needed */
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
 
-  .contact-link {
-	font-size: 4em;
-	color: #0297FF; 
-	text-decoration: none;
-	transition: color 0.3s;
-  }
-  
-  .contact-link:hover {
-	color: #0073e6;
-  }
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-link {
+    font-size: 4em;
+    color: #0297FF; 
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-link:hover {
+    color: #0073e6;
+}
+
+@media (max-width: 768px) {
+    .contact-links {
+        flex-direction: column; /* Change layout to vertical */
+        gap: 20px; /* Adjust gap for vertical layout */
+    }
+}
+
 footer {
-	float: left;
-	background: #0297FF;
-	width: 100%;
-	color: #fff;
-	padding: 20px 0
+    float: left;
+    background: #0297FF;
+    width: 100%;
+    color: #fff;
+    padding: 20px 0;
 }
 footer ul {
-	list-style: none;
-	padding-left: 0
+    list-style: none;
+    padding-left: 0;
 }
 footer h2 {
-	font-size: 20px;
-	font-weight: 600;
+    font-size: 20px;
+    font-weight: 600;
 }
 footer li a {
-	color: #fff;
-	float: left;
-	padding-bottom: 15px;
-	width: 100%;
+    color: #fff;
+    float: left;
+    padding-bottom: 15px;
+    width: 100%;
 }
 footer .copy-footer {
-	border-top: 1px solid #fff;
-	padding-top: 20px;
-	margin-top: 10px;
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+    margin-top: 10px;
 }
 
 
